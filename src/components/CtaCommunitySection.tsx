@@ -5,7 +5,7 @@ export function CtaCommunitySection() {
   return (
     <section
       id="comunidade"
-      className="py-4 bg-brand-pink/10 relative overflow-hidden"
+      className="py-4 bg-green-500/10 relative overflow-hidden"
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 relative z-10 flex items-center justify-between">
         <div>

@@ -1,23 +1,23 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Heart } from "lucide-react";
+import { FaInstagram } from "react-icons/fa";
 
 export function Footer() {
   return (
-    <footer className="bg-brand-cream border-t border-rose-100/80 pt-12 pb-8">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-rose-100/60">
-          {/* Logo */}
+    <footer className="bg-brand-green border-t border-rose-100/80 text-green-100">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-rose-100/60">
           <Link href="/">
             <Image
-              src="/logo-floral.svg"
+              src="/logo-footer.png"
               alt="Logo Elas por Aí"
-              width={100}
-              height={35}
+              width={150}
+              height={50}
             />
           </Link>
 
-          <nav className="flex flex-wrap items-center justify-center gap-6 text-sm font-medium text-slate-600">
+          <nav className="flex flex-wrap items-center justify-center gap-6 text-sm font-medium text-green-100">
             <Link
               href="#inicio"
               className="hover:text-brand-pink transition-colors"
@@ -50,17 +50,13 @@ export function Footer() {
               target="_blank"
               aria-label="Instagram"
               className="p-2 rounded-full hover:bg-brand-pink/10 transition-colors"
-            ></Link>
-            <Link
-              href="https://linkedin.com"
-              target="_blank"
-              aria-label="LinkedIn"
-              className="p-2 rounded-full hover:bg-brand-pink/10 transition-colors"
-            ></Link>
+            >
+              <FaInstagram size={26} />
+            </Link>
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-between text-xs gap-4 pb-4">
           <p>
             © {new Date().getFullYear()} Elas por Aí. Todos os direitos
             reservados.

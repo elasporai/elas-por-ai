@@ -9,14 +9,14 @@ interface Founder {
 
 const FOUNDERS: Founder[] = [
   {
-    name: "Francisca Elaine",
+    name: "Francisca Elania",
     role: "Co-fundadora",
     bio: "Especialista em criar encontros acolhedores, transformar boas conversas em memórias inesquecíveis e expandir a rede.",
     image: "/fa-member.jpeg",
   },
   {
     name: "Nome da Idealizadora 2",
-    role: "Co-fundadora & Eventos",
+    role: "Co-fundadora",
     bio: "Apaixonada por conectar pessoas, criar experiências marcantes e promover o protagonismo feminino por onde passa.",
     image: "/logo-floral.svg",
   },
@@ -26,7 +26,7 @@ export function FoundersSection() {
   return (
     <section
       id="idealizadoras"
-      className="py-16 md:py-24 bg-white border-t border-rose-100/50"
+      className="py-16 md:py-24 bg-green-200/10 border-t border-rose-100/50"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">

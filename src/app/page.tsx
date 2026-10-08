@@ -1,5 +1,10 @@
-import Image from "next/image";
+import { Header } from "@/components/Header";
 
 export default function Home() {
-  return <h1>elas por ai</h1>;
+  return (
+    <div className="min-h-screen bg-brand-cream">
+      <Header />
+      <main>{/* Próximas seções entrarão aqui */}</main>
+    </div>
+  );
 }

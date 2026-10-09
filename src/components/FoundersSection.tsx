@@ -26,7 +26,7 @@ export function FoundersSection() {
   return (
     <section
       id="idealizadoras"
-      className="py-16 md:py-24 bg-green-200/10 border-t border-rose-100/50"
+      className="md:py-24 bg-green-200/10 border-t border-rose-100/50"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">

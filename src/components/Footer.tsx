@@ -39,10 +39,7 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-between text-xs gap-4 pb-4">
-          <p>
-            © {new Date().getFullYear()} Elas por Aí. Todos os direitos
-            reservados.
-          </p>
+          <p>© 2026 Elas por Aí. Todos os direitos reservados.</p>
           <p className="flex items-center gap-1">
             Feito com{" "}
             <Heart

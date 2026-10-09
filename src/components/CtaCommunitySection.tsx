@@ -7,13 +7,13 @@ export function CtaCommunitySection() {
       id="comunidade"
       className="py-4 bg-green-500/10 relative overflow-hidden"
     >
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 relative z-10 flex items-center justify-between">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 relative z-10 flex flex-col md:flex-row items-center justify-between">
         <div>
-          <h2 className="text-xl font-extrabold text-brand-green leading-tight">
+          <h2 className="text-xl font-extrabold text-green-950 leading-tight md:mb-4">
             Pronta para viver tudo isso?
           </h2>
 
-          <p className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="hidden md:block text-green-950 sm:text-lg max-w-2xl mx-auto leading-relaxed">
             Faça parte do Elas por Ai e entre para uma comunidade <br /> feita
             de mulheres reais como você.
           </p>

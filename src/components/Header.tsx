@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import { Nav } from "./Nav";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,32 +21,7 @@ export function Header() {
           />
         </Link>
 
-        <nav className="hidden md:flex items-center gap-8 font-medium text-slate-700 text-sm">
-          <Link
-            href="#inicio"
-            className="hover:text-brand-pink transition-colors"
-          >
-            Início
-          </Link>
-          <Link
-            href="#sobre"
-            className="hover:text-brand-pink transition-colors"
-          >
-            Sobre
-          </Link>
-          <Link
-            href="#eventos"
-            className="hover:text-brand-pink transition-colors"
-          >
-            Eventos
-          </Link>
-          <Link
-            href="#idealizadoras"
-            className="hover:text-brand-pink transition-colors"
-          >
-            Idealizadoras
-          </Link>
-        </nav>
+        <Nav />
 
         <div className="hidden md:flex items-center">
           <Link

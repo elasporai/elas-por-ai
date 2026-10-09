@@ -28,7 +28,7 @@ export function AboutSection() {
   ];
 
   return (
-    <section id="sobre" className="py-16 md:py-24 bg-green-300/10">
+    <section id="sobre" className="md:py-24 bg-green-300/10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
           <div className="space-y-6 lg:col-span-2">

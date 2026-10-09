@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "Elas por Aí | Comunidade para Mulheres",
   description:
     "Conexões reais, histórias incríveis. O seu lugar de conexão e acolhimento.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

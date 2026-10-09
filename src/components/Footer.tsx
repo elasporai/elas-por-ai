@@ -2,39 +2,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { Heart } from "lucide-react";
 import { FaInstagram } from "react-icons/fa";
+import { NavFooter } from "./Nav";
 
 export function Footer() {
   return (
     <footer className="bg-brand-green border-t border-rose-100/80 text-green-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b border-rose-100/60">
-          <nav className="flex flex-col md:flex-row flex-wrap md:items-center md:justify-center gap-6 text-sm font-medium text-green-100 pt-4">
-            <Link
-              href="#inicio"
-              className="hover:text-brand-pink transition-colors"
-            >
-              Início
-            </Link>
-            <Link
-              href="#sobre"
-              className="hover:text-brand-pink transition-colors"
-            >
-              Sobre
-            </Link>
-            <Link
-              href="#eventos"
-              className="hover:text-brand-pink transition-colors"
-            >
-              Eventos
-            </Link>
-            <Link
-              href="#idealizadoras"
-              className="hover:text-brand-pink transition-colors"
-            >
-              Idealizadoras
-            </Link>
-          </nav>
-
+          <NavFooter />
           <div className="flex items-center justify-between text-brand-pink mb-4">
             <Link
               href="https://instagram.com"

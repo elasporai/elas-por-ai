@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
-import { Nav } from "./Nav";
+import { NavHeader, NavMobile } from "./Nav";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +21,7 @@ export function Header() {
           />
         </Link>
 
-        <Nav />
+        <NavHeader />
 
         <div className="hidden md:flex items-center">
           <Link
@@ -41,50 +41,7 @@ export function Header() {
         </button>
       </div>
 
-      {isMenuOpen && (
-        <div className="md:hidden bg-brand-cream border-b border-rose-100 px-6 pt-4 pb-6 space-y-4 animate-in slide-in-from-top duration-200">
-          <nav className="flex flex-col gap-3 font-medium text-slate-700 text-base">
-            <Link
-              href="#inicio"
-              onClick={() => setIsMenuOpen(false)}
-              className="hover:text-brand-pink transition-colors py-1"
-            >
-              Início
-            </Link>
-            <Link
-              href="#sobre"
-              onClick={() => setIsMenuOpen(false)}
-              className="hover:text-brand-pink transition-colors py-1"
-            >
-              Sobre
-            </Link>
-            <Link
-              href="#eventos"
-              onClick={() => setIsMenuOpen(false)}
-              className="hover:text-brand-pink transition-colors py-1"
-            >
-              Eventos
-            </Link>
-            <Link
-              href="#idealizadoras"
-              onClick={() => setIsMenuOpen(false)}
-              className="hover:text-brand-pink transition-colors py-1"
-            >
-              Idealizadoras
-            </Link>
-          </nav>
-
-          <div className="pt-2">
-            <Link
-              href="#comunidade"
-              onClick={() => setIsMenuOpen(false)}
-              className="block text-center bg-brand-pink hover:bg-brand-pink-hover text-white px-5 py-3 rounded-full text-sm font-semibold transition-all shadow-sm"
-            >
-              Entrar na comunidade
-            </Link>
-          </div>
-        </div>
-      )}
+      {isMenuOpen && <NavMobile setIsMenuOpen={setIsMenuOpen} />}
     </header>
   );
 }

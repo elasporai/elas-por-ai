@@ -29,7 +29,7 @@ export const NavHeader = () => {
 
 export const NavFooter = () => {
   return (
-    <nav className="flex flex-col md:flex-row flex-wrap md:items-center md:justify-center gap-6 text-sm font-medium text-green-100 pt-4">
+    <nav className="flex flex-wrap md:items-center md:justify-center gap-4 text-sm font-medium text-green-100 pt-4">
       {menu.map((item) => (
         <Link
           key={item.label}
